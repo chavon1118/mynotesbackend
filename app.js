@@ -14,12 +14,12 @@ var apiRouter = require('./routes/api.route');
 var app = express();
 
 // set up mongodb connection
-mongoose.connect('mongodb://heroku_0mc7rmx6:6076u7i1n34sd6e52gogglq9la@ds131329.mlab.com:31329/heroku_0mc7rmx6' ||'mongodb://127.0.0.1:27017/noteapp')
+mongoose.connect('mongodb://heroku_0mc7rmx6:6076u7i1n34sd6e52gogglq9la@ds131329.mlab.com:31329/heroku_0mc7rmx6')
 .then(() => {
-	console.log('Successfully connected to the Mongodb Database at URL: mongodb://127.0.0.1:27017/noteapp')
+	console.log('Successfully connected to the Mongodb Database at URL: mongodb://heroku_0mc7rmx6:6076u7i1n34sd6e52gogglq9la@ds131329.mlab.com:31329/heroku_0mc7rmx6')
 })
 .catch(() => {
-	console.log('Error connecting to the Mongodb Database at URL: mongodb://127.0.0.1:27017/noteapp')
+	console.log('Error connecting to the Mongodb Database at URL: mongodb://heroku_0mc7rmx6:6076u7i1n34sd6e52gogglq9la@ds131329.mlab.com:31329/heroku_0mc7rmx6')
 })
 
 // allow Cross Origin Request(Request from Angular Frontend)
